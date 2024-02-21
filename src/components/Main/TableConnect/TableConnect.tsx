@@ -200,7 +200,7 @@ export function TableConnect() {
   });
 
   return (
-    <div className='w-full'>
+    <div className='w-full bg-sky p-6 rounded-lg'>
       <div className='flex items-center py-4'>
         <Input
           placeholder='Поиск подключения...'
@@ -242,7 +242,7 @@ export function TableConnect() {
         {/*  </DropdownMenuContent>*/}
         {/*</DropdownMenu>*/}
       </div>
-      <div className='rounded-md border'>
+      <div className='rounded-md'>
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -262,10 +262,11 @@ export function TableConnect() {
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody className={'bg-column-color'}>
+          <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
+                  className='border-gray-300'
                   key={row.id}
                   data-state={row.getIsSelected() && 'selected'}
                 >
