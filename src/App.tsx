@@ -1,11 +1,9 @@
-import './App.css';
+import { Main } from '@/components/Main/Main.tsx';
 
-const App = () => {
+export const App = () => {
   return (
-    <>
-      <div>Hi</div>
-    </>
+    <div className='px-10 py-5 bg-dark-gray'>
+      <Main />
+    </div>
   );
 };
-
-export default App;
