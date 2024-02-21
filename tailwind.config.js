@@ -21,6 +21,11 @@ module.exports = {
       colors: {
         'plus-icon': 'transperent',
         'dark-gray': 'hsl(162, 4%, 74%)',
+        'background-gray': '#469597',
+        cream: '#DDBEAA',
+        'gray-green': '#BBC6C8',
+        'column-color': '#659FA6',
+        sky: '#E5E3E4',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
