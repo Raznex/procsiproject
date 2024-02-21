@@ -1,12 +1,9 @@
-import { PlusSquare } from 'lucide-react';
-import { Button } from '../ui/button';
+import { NewConnection } from '../NewConnection/NewConnection';
 
 export const Main = () => {
   return (
     <div>
-      <Button>
-      <PlusSquare />
-      </Button>
+      <NewConnection />
     </div>
   );
 };
