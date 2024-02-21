@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
@@ -18,6 +19,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        'plus-icon': 'transperent',
+        'dark-gray': 'hsl(162, 4%, 74%)',
         'background-gray': '#469597',
         cream: '#DDBEAA',
         'gray-green': '#BBC6C8',
