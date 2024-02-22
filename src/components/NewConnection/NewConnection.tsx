@@ -21,35 +21,40 @@ type NewConnection = (typeof SHEET_SIDES)[number];
 
 export const NewConnection = () => {
   return (
-    <div>
+    <div className='align-flex-end mb-4'>
       {SHEET_SIDES.map((side) => (
         <Sheet key={side}>
           <SheetTrigger asChild>
             <Button variant='ghost'>
-              <PlusSquare />
+              <PlusSquare className='mr-3' />
+              Добавить соединение
             </Button>
           </SheetTrigger>
-          <SheetContent side={side}>
+          <SheetContent side={side} className='w-[80%] mx-auto'>
             <SheetHeader>
-              <SheetTitle>Создать соединение</SheetTitle>
+              <SheetTitle className='text-center'>
+                Создать соединение
+              </SheetTitle>
             </SheetHeader>
-            <div className='grid gap-4 py-4'>
-              <div className='grid grid-cols-4 items-center gap-4'>
+            <div className='flex flex-col gap-5 py-4 justify-items-center w-'>
+              <div className='flex items-center gap-4'>
                 <Label htmlFor='name' className='text-right'>
                   Название
                 </Label>
                 <Input id='name' className='col-span-3' />
               </div>
-              <div className='grid grid-cols-4 items-center gap-4'>
+              <div className='flex items-center gap-4'>
                 <Label htmlFor='username' className='text-right'>
                   Описание
                 </Label>
-                <Input id='username' className='col-span-3' />
+                <Input id='username' className='w-[100%]' />
               </div>
             </div>
             <SheetFooter>
               <SheetClose asChild>
-                <Button type='submit'>Добавить соединение</Button>
+                <Button type='submit' className='justify-items-center'>
+                  Добавить соединение
+                </Button>
               </SheetClose>
             </SheetFooter>
           </SheetContent>
