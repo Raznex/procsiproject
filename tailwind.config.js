@@ -19,13 +19,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        'plus-icon': 'transperent',
         'dark-gray': 'hsl(162, 4%, 74%)',
         'background-gray': '#469597',
+        'light-gray': '#fafafa',
         cream: '#DDBEAA',
         'gray-green': '#BBC6C8',
         'column-color': '#659FA6',
-        sky: '#E5E3E4',
+        'deep-blue-sky': '#00BFFFFF',
+        'active-green': '#5cbc6c',
+        'plus-icon': 'transparent',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
