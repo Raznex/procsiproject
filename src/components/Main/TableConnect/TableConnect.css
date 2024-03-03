@@ -1,0 +1,80 @@
+.table-connect {
+    font-family: Inter, Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.table-connect__accordeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+}
+
+.table-connect__trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.table-connect__header {
+    border-bottom: 2px solid #00BFFFFF;
+    opacity: 0.2;
+    border-radius: 30px;
+}
+
+.table-connect__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.table-connect__button:active {
+    scale: 0.95;
+}
+
+.table-connect__state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.table-connect__time-reboot {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #00BFFFFF;
+    padding: 15px 10px;
+    position: absolute;
+    top: -80px;
+    text-align: center;
+    z-index: 10;
+    display: none;
+}
+
+.table-connect__state:hover .table-connect__time-reboot {
+    display: block;
+}
+
+.button_colorized {
+    fill: deepskyblue;
+}
+
+.table-connect__settings {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    transition: max-width 0.3s ease;
+    max-width: 0;
+}
+
+.table-connect__settings.show {
+    max-width: 150px;
+}
+
+.table-connect__settings.show {
+    transform: translateX(0);
+}
