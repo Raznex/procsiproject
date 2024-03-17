@@ -1,11 +1,9 @@
 // import { NewConnection } from '../NewConnection/NewConnection';
-import { TableConnect } from '@/components/Main/TableConnect/TableConnect.tsx';
-
+import { TableRouter } from '@/components/TableRouter/TableRouter.tsx';
 export const Main = () => {
   return (
-    <div className={'p-10'}>
-      {/*<NewConnection />*/}
-      <TableConnect />
+    <div>
+      <TableRouter />
     </div>
   );
 };
